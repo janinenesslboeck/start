@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- German Homepage -->
+  <url>
+    <loc>https://janinenesslboeck.de/</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://janinenesslboeck.de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janinenesslboeck.de/indexen.html"/>
+  </url>
+  
+  <!-- English Homepage -->
+  <url>
+    <loc>https://janinenesslboeck.de/indexen.html</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://janinenesslboeck.de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janinenesslboeck.de/indexen.html"/>
+  </url>
+  
+  <!-- Imprint -->
+  <url>
+    <loc>https://janinenesslboeck.de/impressum.html</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://janinenesslboeck.de/datenschutz.html</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+</urlset>

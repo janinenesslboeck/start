@@ -1,18 +1,90 @@
 /* Navbar */
- .navbar ul li{
+.navbar {
+    padding: 10px 12px;
+    min-height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
 
-    font-size: 0.60rem;
- }
+.navbar.scrolled {
+    padding: 8px 12px;
+    min-height: auto;
+}
 
- .navbar ul li a{
+.nav-logo {
+    flex: 1 1 auto;
+    min-width: 0;
+    text-align: left;
+    margin: 0;
+    order: 1;
+}
 
-    padding: 10px 20px;
+.logo-link {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    max-width: 100%;
+}
 
+.languagehead {
+    order: 2;
+    margin-left: auto;
+    gap: 3px;
+    padding: 2px;
+    flex: 0 0 auto;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .language {
-    font-size: 7px;
-   
+    padding: 4px 8px;
+    font-size: 0.65rem;
+    white-space: nowrap;
+    min-width: 32px;
+    text-align: center;
+}
+
+.navbar ul {
+    order: 3;
+    width: 100%;
+    gap: 2px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 8px 0 0 0;
+    padding: 8px 0 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+}
+
+.navbar ul li {
+    font-size: 0.65rem;
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.navbar ul li a {
+    padding: 6px 4px;
+    font-size: 0.65rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navbar ul li a::before {
+    bottom: 4px;
+    height: 1.5px;
 }
 /* Home */
 #home{
@@ -30,35 +102,91 @@
     width: 100%;
 }
 
+.main {
+    animation: slideInFromLeft 1s ease-out;
+}
+
 /* About */
 #pic img{ 
-     width: 250px;
+    width: 250px;
     height: 250px;
-
-
+    border-radius: 15px;
 }
 
 #intro h2{
     font-size: 1.5rem;
 }
 
-/* protfolio */
+/* Portfolio */
 
 .gallery img{
     width: 250px;
     height: 150px;
     margin: 10px;
+    border-radius: 10px;
 }
 
-/* Contect */
-
-.input{
-    width: 80%;
-}
-#msg{
-    width: 70%;
+/* Contact */
+#contact {
+    padding: 30px 15px;
 }
 
-#send{
-width: 20%;
+.form {
+    margin: 15px 0;
+    padding: 0 10px;
+}
+
+.input {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    transform: translateY(-1px);
+}
+
+#msg {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    font-size: 0.9rem;
+    min-height: 120px;
+    box-sizing: border-box;
+}
+
+#msg:focus {
+    transform: translateY(-1px);
+}
+
+#send {
+    width: 100%;
+    max-width: 100%;
+    min-width: auto;
+    padding: 14px 20px;
+    margin: 20px 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form .language {
+    display: inline-block;
+    margin: 8px 5px;
+    padding: 8px 12px;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.form .language:hover {
+    transform: translateY(-2px);
+}
+
+.rights {
+    margin-top: 15px;
+    font-size: 0.7rem;
+    padding: 0 10px;
 }
