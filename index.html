@@ -69,6 +69,7 @@
       <li><a href="#home">Start</a></li>
       <li><a href="#about">Über Mich</a></li>
       <li><a href="#services">Angebote</a></li>
+      <li><a href="#courses">Aktuelle Kurse</a></li>
       <li><a href="#contact">Kontakt</a></li>
     </ul>
     <div class="languagehead">
@@ -90,11 +91,14 @@
     <H1 class="headings">Über Mich</H1>
     <div  id="pic">
 
-      <img src="./public/images/about-me.jpeg" alt="">
+      <figure id="about-fig">
+        <img src="./public/images/about-me.jpeg" alt="">
+        <figcaption class="photo-caption">© Sebastian Runge</figcaption>
+      </figure>
       <div id="intro">
         <h2>Janine Neßlböck</h2>
         <p>Hallo, 
-          mein Name ist Janine Neßlböck und ich unterrichte Kreativen Kindertanz, Contemporary Dance, Show-Jazz und Ballett für Kinder, Jugendliche und Erwachsene in Berlin. 
+          mein Name ist Janine Neßlböck (B.A.) und ich unterrichte Kreativen Kindertanz, Contemporary Dance, Show-Jazz und Ballett für Kinder, Jugendliche und Erwachsene in Berlin. 
           Seit ich denken kann, ist die Freude an der Bewegung und die Liebe zur Musik das, was mich antreibt. In meinem Unterricht werden die Teilnehmenden durch kreative 
           und anatomisch-geschulte Übungen in die Grundlagen der Tanzkunst eingeführt. In einer sicheren und inklusiven Lernumgebung wird die Entwicklung eines Gemeinschaftsgefühls im Tanzsaal 
           und die Basis für eure individuelle Leidenschaft geschaffen. Ich freue mich auf euch!
@@ -161,6 +165,25 @@
     </div>
   </section>
 
+  <section id="courses">
+    <h1 class="headings">Aktuelle Kurse</h1>
+    <div class="courses-container">
+      <div class="course-location">
+        <h3>Montags</h3>
+        <ul>
+          <li>15.45–16.30 Uhr Eltern-Kind-Tanz ab 2 Jahren (mit Eltern) <strong>NEU</strong> – bitte anmelden: <a href="tel:+493063905070">+493063905070</a></li>
+          <li>16.30–17.15 Uhr Kindertanzen ab 3 Jahren</li>
+          <li>17.15–18.00 Uhr Kindertanzen ab 6 Jahren</li>
+        </ul>
+        <p>im Gesundheits- und Familiensportverein Berlin-Johannisthal e.V. im Family Fit Sportstudio am Sterndamm 35, 12487 Berlin</p>
+      </div>
+      <div class="course-location">
+        <p>im Vormittagskurs „Wirbelwolken" der Jugendkunstschule Friedrichshain-Kreuzberg FRI-X-BERG am Tempelhofer Ufer 18–19, 10963 Berlin für Kitagruppen und Schulklassen für Kinder von 4–8 Jahren oder 1.–3. Klasse auf Anfrage an <a href="mailto:insel@frixberg.de">insel@frixberg.de</a></p>
+      </div>
+      <p class="courses-note">Weitere Kurse auf persönliche Anfrage über das Kontaktformular</p>
+    </div>
+  </section>
+
   <section id="contact">
     <h1 class="headings">Kontakt</h1>
     <form action="https://formspree.io/f/xeqwljql"  method="POST" class="form">
@@ -204,7 +227,7 @@
 
     // Observe all sections
     document.addEventListener('DOMContentLoaded', function() {
-      const sections = document.querySelectorAll('#about, #profile, #services, #contact');
+      const sections = document.querySelectorAll('#about, #profile, #services, #courses, #contact');
       sections.forEach(section => {
         observer.observe(section);
       });

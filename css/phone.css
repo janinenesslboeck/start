@@ -107,10 +107,19 @@
 }
 
 /* About */
-#pic img{ 
+#pic img{
     width: 250px;
     height: 250px;
     border-radius: 15px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.photo-caption {
+    font-size: 0.75rem;
+    color: #888;
+    text-align: center;
+    margin-top: 4px;
 }
 
 #intro h2{
@@ -123,7 +132,6 @@
     width: 250px;
     height: 150px;
     margin: 10px;
-    border-radius: 10px;
 }
 
 /* Contact */

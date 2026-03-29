@@ -69,6 +69,7 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About Me</a></li>
       <li><a href="#services">Services</a></li>
+      <li><a href="#courses">Current Classes</a></li>
       <li><a href="#contact">Contact Me</a></li>
     </ul>
     <div class="languagehead">
@@ -93,7 +94,7 @@
       <img src="./public/images/about-me.jpeg" alt="">
       <div id="intro">
         <h2>Janine Neßlböck</h2>
-        <p>Hello, my name is Janine Neßlböck and I teach Creative Dance for kids, Contemporary Dance, Show-Jazz and Ballet for children, teenagers and adults in Berlin. Ever since I can remember, the joy of movement and the love for music has driven me.
+        <p>Hello, my name is Janine Neßlböck (B.A.) and I teach Creative Dance for kids, Contemporary Dance, Show-Jazz and Ballet for children, teenagers and adults in Berlin. Ever since I can remember, the joy of movement and the love for music has driven me.
          In my lessons, participants are introduced to the fundamentals of dance through creative and anatomically adapted exercises. In a safe and inclusive learning environment, we will develop a sense of community in the classroom
          as well as the foundation for your individual passion. I look forward to see you!
           
@@ -158,6 +159,25 @@
     </div>
   </section>
 
+  <section id="courses">
+    <h1 class="headings">Current Classes</h1>
+    <div class="courses-container">
+      <div class="course-location">
+        <h3>Mondays</h3>
+        <ul>
+          <li>3:45–4:30 p.m. Parent-Child Dance (ages 2 and up, with parents) <strong>NEW</strong> – please register: <a href="tel:+493063905070">+493063905070</a></li>
+          <li>4:30–5:15 p.m. Creative Children's Dance ages 3 and up</li>
+          <li>5:15–6:00 p.m. Creative Children's Dance ages 6 and up</li>
+        </ul>
+        <p>at the Gesundheits- und Familiensportverein Berlin-Johannisthal e.V. at the Family Fit gym at Sterndamm 35, 12487 Berlin</p>
+      </div>
+      <div class="course-location">
+        <p>In the morning class "Wirbelwolken" at the Friedrichshain-Kreuzberg Youth Art School FRI-X-BERG at Tempelhofer Ufer 18–19, 10963 Berlin, for daycare groups and school classes for children ages 4–8 or grades 1–3; please inquire at <a href="mailto:insel@frixberg.de">insel@frixberg.de</a></p>
+      </div>
+      <p class="courses-note">Additional classes available upon personal request via the contact form</p>
+    </div>
+  </section>
+
   <section id="contact">
     <h1 class="headings">Contact Me</h1>
     <form action="https://formspree.io/f/xeqwljql"  method="POST" class="form">
@@ -201,7 +221,7 @@
 
     // Observe all sections
     document.addEventListener('DOMContentLoaded', function() {
-      const sections = document.querySelectorAll('#about, #profile, #services, #contact');
+      const sections = document.querySelectorAll('#about, #profile, #services, #courses, #contact');
       sections.forEach(section => {
         observer.observe(section);
       });

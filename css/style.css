@@ -301,10 +301,20 @@ html{
     gap: 30px;
     align-items: center;
 }
+#about-fig {
+    margin: 0;
+    padding: 0;
+}
+
+.photo-caption {
+    display: none;
+}
+
 #pic img{
-    width: 575px;
-    height: 400px;
-    object-fit: cover;
+    width: auto;
+    max-width: 575px;
+    height: auto;
+    max-height: 700px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -363,7 +373,6 @@ html{
     height: 240px;
     margin: 10px;
     object-fit: cover;
-    border-radius: 10px;
     transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -373,7 +382,7 @@ html{
 .gallery img:nth-child(1) { animation-delay: 0.1s; }
 .gallery img:nth-child(2) { animation-delay: 0.2s; }
 .gallery img:nth-child(3) { animation-delay: 0.3s; }
-.gallery img:nth-child(4) { animation-delay: 0.4s; }
+.gallery img:nth-child(4) { animation-delay: 0.4s; object-position: center bottom; }
 .gallery img:nth-child(5) { animation-delay: 0.5s; }
 .gallery img:nth-child(6) { animation-delay: 0.6s; }
 
@@ -451,6 +460,85 @@ html{
 
 .box:hover img {
     transform: rotate(360deg) scale(1.1);
+}
+
+/* courses section */
+
+#courses {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.courses-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px 20px;
+}
+
+.course-location {
+    border-left: 4px solid rgb(255, 45, 45);
+    padding-left: 20px;
+}
+
+.course-location h3 {
+    font-family: century;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.course-location ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 12px;
+}
+
+.course-location ul li {
+    line-height: 2;
+    font-size: 1rem;
+    color: #444;
+    padding: 2px 0;
+}
+
+.course-location ul li::before {
+    content: "–";
+    color: rgb(255, 45, 45);
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.course-location p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.7;
+    margin-top: 8px;
+}
+
+.course-location a {
+    color: rgb(255, 45, 45);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.course-location a:hover {
+    text-decoration: underline;
+}
+
+.courses-note {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
 }
 
 /* contact section*/
